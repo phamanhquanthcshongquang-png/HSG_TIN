@@ -8,8 +8,8 @@ int main(){
     long long n, m; cin >> n >> m;
     long long tong = 0;
     while(n < m){
-        n = (long long)round(n * 1.1);
-        tong += 1;
+        n *= 1.1;
+        tong++;
     }
     cout << tong << "\n";
     return 0;
